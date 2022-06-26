@@ -4,8 +4,8 @@ import styles from './MainNavigation.module.css';
 
 function MainNavigationPage() {
     return ( 
-        <header className={}>
-            <div>Logo</div>
+        <header className={styles.header}>
+            <div className={styles.logo}>Logo</div>
             <nav>
                 <ul>
                     <li>
