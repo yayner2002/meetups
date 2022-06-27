@@ -1,4 +1,5 @@
 import React from "react";
+import MeetupList from "../components/meetups/MeetupList";
 import styles from "./AllMeetups.module.css";
 
 function AllMeetupsPage() {
@@ -26,11 +27,7 @@ function AllMeetupsPage() {
     <div className={styles.container}>
       <section>
         <h1>All Meetups</h1>
-        <ul>
-          {DUMMY_DATA.map((meetup) => {
-            return <li key={meetup.id}>{meetup.title}</li>;
-          })}
-        </ul>
+        <MeetupList meetups={DUMMY_DATA}/>
       </section>
     </div>
   );
