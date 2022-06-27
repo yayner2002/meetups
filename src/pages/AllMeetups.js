@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./AllMeetups.module.css";
 
 function AllMeetupsPage() {
   const DUMMY_DATA = [
@@ -21,14 +22,18 @@ function AllMeetupsPage() {
         "This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!",
     },
   ];
-  return <section>
-    <h1>All Meetups</h1>
-    <ul>
-        {DUMMY_DATA.map(meetup => {
-            return <li key={meetup.id}>{meetup.title}</li>
-        })}
-    </ul>
-  </section>;
+  return (
+    <div className={styles.container}>
+      <section>
+        <h1>All Meetups</h1>
+        <ul>
+          {DUMMY_DATA.map((meetup) => {
+            return <li key={meetup.id}>{meetup.title}</li>;
+          })}
+        </ul>
+      </section>
+    </div>
+  );
 }
 
 export default AllMeetupsPage;
