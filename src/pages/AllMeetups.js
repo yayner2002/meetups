@@ -1,6 +1,5 @@
 import React from "react";
 import MeetupList from "../components/meetups/MeetupList";
-import styles from "./AllMeetups.module.css";
 
 function AllMeetupsPage() {
   const DUMMY_DATA = [
@@ -24,7 +23,7 @@ function AllMeetupsPage() {
     },
   ];
   return (
-    <div className={styles.container}>
+    <div>
       <section>
         <h1>All Meetups</h1>
         <MeetupList meetups={DUMMY_DATA}/>
